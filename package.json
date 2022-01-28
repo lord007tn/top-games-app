@@ -6,11 +6,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client:env": "cd client && npm install",
     "server:env": "cd server && npm install",
+    "client:dev": "cd client && npm start",
     "server:dev": "cd server && npm run dev ",
-    "worker:dev": "cd worker && npm run dev",
     "dev": "concurrently -n 'server,client' -c 'green,magenta' \"npm run server:dev\" \"npm run client:dev\"",
     "env": "npm i && concurrently -n 'server,client' -c 'green,magenta' \"npm run server:env\" \"npm run client:env\"",
-    "start":"cd server && npm start"
+    "start": "cd server && npm start"
   },
   "author": "Raed Bahri",
   "license": "MIT",
